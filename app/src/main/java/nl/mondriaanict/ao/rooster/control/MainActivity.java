@@ -25,6 +25,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             view.showWarningToast("Please fill in all fields!");
             return;
         }
+
         // TODO json script thingies
     }
 }
