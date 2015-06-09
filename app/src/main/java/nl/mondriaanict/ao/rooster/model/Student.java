@@ -2,45 +2,51 @@ package nl.mondriaanict.ao.rooster.model;
 
 public class Student {
 
-    private String firstname, middlename, surname, email;
-    private int cardId, mondriaanId, magisterId;
+    private String firstName;
+    private String middleName;
+    private String surname;
+    private String email;
+    private String cardId;
+    private String mondriaanId;
+    private String magisterId;
 
+    public Student(String firstName, String middleName, String surname, String email,
+                   String cardId, String mondriaanId, String magisterId) {
 
-    public Student(String firstname, String middlename, String surname, int cardId, String email, int mondriaanId, int magisterId) {
-        this.firstname = firstname;
-        this.middlename = middlename;
+        this.firstName = firstName;
+        this.middleName = middleName;
         this.surname = surname;
-        this.cardId = cardId;
         this.email = email;
+        this.cardId = cardId;
         this.mondriaanId = mondriaanId;
         this.magisterId = magisterId;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public int getCardId() {
-        return cardId;
-    }
-
-    public String getMiddlename() {
-        return middlename;
-    }
-
     public String getEmail() {
         return email;
     }
 
-    public int getMondriaanId() {
+    public String getCardId() {
+        return cardId;
+    }
+
+    public String getMondriaanId() {
         return mondriaanId;
     }
 
-    public int getMagisterId() {
+    public String getMagisterId() {
         return magisterId;
     }
 }
