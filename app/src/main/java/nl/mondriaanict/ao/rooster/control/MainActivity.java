@@ -5,14 +5,18 @@ import android.os.Bundle;
 import android.view.View;
 
 import nl.mondriaanict.ao.rooster.R;
+import nl.mondriaanict.ao.rooster.view.MainView;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
+    private MainView view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        this.setContentView(R.layout.activity_main);
+        this.view = new MainView(this);
     }
 
     @Override
