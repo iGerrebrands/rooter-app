@@ -10,12 +10,12 @@ import nl.mondriaanict.ao.rooster.view.MainView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    MainView view;
+    private MainView view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        this.setContentView(R.layout.activity_main);
         this.view = new MainView(this);
     }
 
