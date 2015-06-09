@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import nl.mondriaanict.ao.rooster.R;
-import nl.mondriaanict.ao.rooster.model.Student;
 import nl.mondriaanict.ao.rooster.view.MainView;
 
 
