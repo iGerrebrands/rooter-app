@@ -14,8 +14,6 @@ public class Student implements Serializable{
     @SerializedName("surname")
     private String surname;
 
-    private String email;
-
     @SerializedName("card_id")
     private String cardId;
 
@@ -25,7 +23,9 @@ public class Student implements Serializable{
     @SerializedName("magister_id")
     private String magisterId;
 
+    private String email;
     private Group group;
+
 
     public Student(String firstName, String middleName, String surname, String email,
                    String cardId, String mondriaanId, String magisterId) {
