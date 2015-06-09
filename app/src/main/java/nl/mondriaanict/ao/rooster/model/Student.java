@@ -1,8 +1,9 @@
 package nl.mondriaanict.ao.rooster.model;
 
+import java.io.Serializable;
 import com.google.gson.annotations.SerializedName;
 
-public class Student {
+public class Student implements Serializable{
 
     @SerializedName("first_name")
     private String firstName;

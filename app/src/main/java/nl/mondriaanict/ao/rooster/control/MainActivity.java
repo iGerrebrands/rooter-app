@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import nl.mondriaanict.ao.rooster.R;
+import nl.mondriaanict.ao.rooster.model.Student;
 import nl.mondriaanict.ao.rooster.view.MainView;
 
 
@@ -25,7 +26,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
             view.showWarningToast("Please fill in all fields!");
             return;
         }
-
         // TODO json script thingies
     }
 }
