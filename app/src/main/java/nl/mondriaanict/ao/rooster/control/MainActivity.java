@@ -21,6 +21,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-
+        if(view.getInputEmail().length() <1 || view.getInputPassword().length() < 1){
+            view.showWarningToast("Please fill in all fields!");
+            return;
+        }
+        // TODO json script thingies
     }
 }
