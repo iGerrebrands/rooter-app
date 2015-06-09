@@ -1,6 +1,8 @@
 package nl.mondriaanict.ao.rooster.model;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable{
 
     private String firstName;
     private String middleName;

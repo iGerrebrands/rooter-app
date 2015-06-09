@@ -5,12 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 
 import nl.mondriaanict.ao.rooster.R;
+import nl.mondriaanict.ao.rooster.model.Student;
 import nl.mondriaanict.ao.rooster.view.MainView;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
     private MainView view;
+    private Student student;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             view.showWarningToast("Please fill in all fields!");
             return;
         }
-        // TODO json script thingies
+        // TODO json script thingies Action code if statement
+        // TODO json script thingie getJson make student form Json
     }
 }
